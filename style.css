@@ -11,7 +11,7 @@ box-shadow: 14px 17px 17px rgba(7, 7, 7, 0.14);
 }
 
 .header {
-    height: 80vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -37,41 +37,25 @@ box-shadow: 10px 10px 8px -4px rgba(54,54,54,0.86);
 }
 
 .textoHexa1 {
-  top: 50%; transform: translateY(-50%); left: 30%;
+  top: 50%; transform: translateY(-50%); left: 28%;
 }
 
 .textoHexa2 {
-  top: 50%; transform: translateY(-50%); left: 30%;
+  top: 50%; transform: translateY(-50%); left: 23%;
 }
 
 .textoHexa3 {
-  top: 50%; transform: translateY(-50%); left: 38%;
+  top: 50%; transform: translateY(-50%); left: 18%;
 }
 
 .textoHexa4 {
-  top: 50%; transform: translateY(-50%); left: 36%;
+  top: 50%; transform: translateY(-50%); left: 24%;
 }
 
 @media only screen and (min-width: 768px) {
   .counter {
   /* Blue 1 */
   background: linear-gradient(to bottom, #2F80ED 0%, #2F80ED 50%, white 50%, white 100% );
-  }
-
-  .textoHexa1 {
-    top: 50%; transform: translateY(-50%); left: 36%;
-  }
-  
-  .textoHexa2 {
-    top: 50%; transform: translateY(-50%); left: 36%;
-  }
-  
-  .textoHexa3 {
-    top: 50%; transform: translateY(-50%); left: 36%;
-  }
-  
-  .textoHexa4 {
-    top: 50%; transform: translateY(-50%); left: 36%;
   }
 }
 
