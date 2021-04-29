@@ -1,0 +1,123 @@
+body {
+  overflow-x: hidden; }
+
+.texto {
+  font-family: 'Manrope', sans-serif; }
+
+/* Fuente */
+/* Header */
+.header {
+  /* Gradients / Kimoby Is The New Blue */
+  background: linear-gradient(180deg, #396AFC 0%, #2948FF 100%);
+  /* Shadow */
+  box-shadow: 14px 17px 17px rgba(7, 7, 7, 0.14); }
+  .header__navbar {
+    border-bottom: #FFFFFF 1px solid; }
+  .header__main {
+    height: 100vh;
+    position: relative;
+    color: whitesmoke;
+    padding: 0;
+    overflow: hidden; }
+  .header__image {
+    position: absolute;
+    bottom: 0; }
+
+/* Contador */
+.counter {
+  background-color: #2949FE; }
+  @media only screen and (min-width: 768px) {
+    .counter .counter {
+      /* Blue 1 */
+      background: linear-gradient(to bottom, #2949FE 0%, #2F80ED 50%, white 50%, white 100%); } }
+  .counter__image {
+    position: relative; }
+  .counter__text {
+    font-weight: 800;
+    line-height: 64px;
+    font-size: 48px; }
+  .counter__textoHexa1 {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 28%; }
+  .counter__textoHexa2 {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 23%; }
+  .counter__textoHexa3 {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18%; }
+  .counter__textoHexa4 {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24%; }
+
+/* Cursos */
+.cursos {
+  margin: auto; }
+  .cursos__image {
+    border: white 1px solid; }
+  .cursos__container {
+    color: black;
+    margin: auto; }
+  .cursos__zoom {
+    transition: transform .2s;
+    /* Animation */ }
+  .cursos__zoom:hover {
+    transform: scale(1.05);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    -webkit-box-shadow: 10px 10px 8px -4px rgba(54, 54, 54, 0.86);
+    -moz-box-shadow: 10px 10px 8px -4px rgba(54, 54, 54, 0.86);
+    box-shadow: 10px 10px 8px -4px rgba(54, 54, 54, 0.86); }
+
+/* Lista Google */
+.google__zoom {
+  transition: transform .2s; }
+
+.google__zoom:hover {
+  transform: scale(1.02);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+/* Lista Coursera */
+.coursera__zoom {
+  transition: transform .2s; }
+
+.coursera__zoom:hover {
+  transform: scale(1.02);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+/* Curso Lista */
+.curso__deco {
+  text-decoration: none; }
+
+.curso__titulo {
+  font-family: 'Manrope', sans-serif;
+  color: black; }
+
+.curso__desc {
+  font-family: 'Manrope', sans-serif;
+  color: black; }
+
+.curso__zoom {
+  transition: transform .2s; }
+
+.curso__zoom:hover {
+  transform: scale(1.02);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+/* Webinars */
+.webinars__texto {
+  font-family: 'Manrope', sans-serif;
+  color: black; }
+
+/* Footer */
+.footer {
+  background: linear-gradient(180deg, #396AFC 0%, #2948FF 100%);
+  color: #ffffff; }
+  .footer__link {
+    text-decoration: none;
+    color: white; }

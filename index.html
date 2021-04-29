@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero´s Proyect</title>
-    <!-- CSS only -->
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->    
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+  </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="border-bottom: #FFFFFF 1px solid">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark header__navbar">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Hero´s Proyect</a>
+              <a class="navbar-brand" href="/">Hero´s Proyect</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -25,16 +28,16 @@
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Programación</a>
+                    <a class="nav-link" href="desarrollo.html">Desarrollo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Diseño</a>
+                    <a class="nav-link" href="diseño.html">Diseño</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Marketing</a>
+                    <a class="nav-link" href="marketing.html">Marketing</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Desarrollo personal</a>
+                    <a class="nav-link" href="desarrollo-personal.html">Desarrollo personal</a>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -44,29 +47,28 @@
               </div>
             </div>
           </nav>
-          <div class="container-fluid header" style="color: whitesmoke; padding: 0; overflow: hidden;">
-            <img src="images/hola.png" class="imagenHeader">
-              <div class="row" style="height: 80vh;">                
+          <div class="container-fluid header__main">
+            <img src="images/hola.png" class="header__image">
+              <div class="row" style="height: 80vh;">
                   <div class="col-md-5 text-center mt-5 mt-md-auto" style="margin: auto;">
-                    <h3 class="texto">La educación, como la luz del sol, puede y debe llegar a todos -<a href="#" style="text-decoration: none;"><b style="color: #FFFFFF; text-decoration: underline;">Varela, José Pedro</b></a></h3>
+                    <h3 class="texto">Buscas aprender algo de manera gratuita? <a href="#cursos" style="text-decoration: none;"><b style="color: #FFFFFF; text-decoration: underline;">Este es tu lugar!</b></a></h3>
                   </div>
-                  <div class="col-md-6 mx-auto d-block" style="margin: auto;">
-                    <!--<img src="images/undraw_education_f8ru.svg" style="height: 80%;" class="img img-fuild d-none d-sm-block">-->
-                    <div class="row" style="color: black; margin: auto;">
+                  <div class="col-md-6 mx-auto d-block cursos" style="margin: auto;">
+                    <div class="row cursos__container">
                       <div class="col-md-6 d-none d-md-block">
-                          <a href="#"><img src="images/angular.jpg" class="card-img-top zoom" alt="..." style="border: rgb(255, 255, 255) 1px solid;"></a>
+                          <a href="#"><img src="images/angular.jpg" class="card-img-top cursos__image cursos__zoom" alt="..."></a>
                       </div>
                       <div class="col-md-6 d-none d-md-block">
-                          <a href="#"><img src="images/react.jpg" class="card-img-top zoom" alt="..." style="border: rgb(255, 255, 255) 1px solid;"></a>
+                          <a href="#"><img src="images/react.jpg" class="card-img-top cursos__image cursos__zoom" alt="..."></a>
                       </div>          
                     </div>
                     <div class="w-100 mt-3 d-none d-md-block"></div>
-                    <div class="row" style="color: black; margin: auto;">
+                    <div class="row cursos__container"">
                       <div class="col-md-6 d-none d-md-block">
-                          <a href="#"><img src="images/web.jpg" class="card-img-top zoom" alt="..." style="border: rgb(255, 255, 255) 1px solid;"></a>
+                          <a href="#"><img src="images/web.jpg" class="card-img-top cursos__image cursos__zoom" alt="..."></a>
                       </div>
                       <div class="col-md-6 d-none d-md-block">
-                          <a href="#"><img src="images/marketing.jpg" class="card-img-top zoom" alt="..." style="border: rgb(255, 255, 255) 1px solid;"></a>
+                          <a href="#"><img src="images/marketing.jpg" class="card-img-top cursos__image cursos__zoom" alt="..."></a>
                       </div>          
                     </div>
                     <img src="images/headerMobile.png" style="height: 100%; width: 100%; z-index: 2;" class="d-md-none float-right">
@@ -74,21 +76,127 @@
               </div>
           </div>
     </header>
-    <main>
-      <div class="container counter mt-auto mt-md-5 rounded mb-5" style="color: black;">
-        <div class="row">
-          <div class="col-md-12" style="padding-top: 20px;">
-            <h2 class="texto text-center" style="color: #FFFFFF;">Contador de estudiantes</h2>
+    <main id="cursos">
+      <!-- Imagenes -->
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-6" style="margin: auto;">
+              <h2 class="texto text-center"><b>El rejunte mas grande de cursos gratuitos!</b></h2>
+              <p class="texto text-center">Elige entre más de 1000 cursos en vídeo y en línea con nuevo contenido cada mes.</p>
+              
+            </div>
+            <div class="col-md-6">
+              <img src="images/Macbook.png" alt="" class="img-fluid">
+            </div>
           </div>
+        </div>
+      </div>      
+      <!-- Mas Vistos -->
+      <div class="container google">
+        <div class="row mt-5 mb-3 texto">
+          <h2><b>Certificado de Google</b></h2>
+          <p>Herramientas, formación y tecnología para ayudar a que tu carrera profesional o tu negocio se fortalezcan.</p>
         </div>
         <div class="row texto">
           <div class="col-md-3">
+            <a href="#" style="color:black; text-decoration: none;"><div class="card google__zoom mx-auto mt-2" style="width: 18rem;">
+              <img src="images/desarrollo google.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: none;"><b>Curso de Introducción al Desarrollo Web</b></h5>
+                <p class="card-text" style="text-decoration: none;">Aprende a crear tus propias páginas web profesionales adaptables a distintos...</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#" style="color:black; text-decoration: none;"><div class="card google__zoom mx-auto mt-2" style="width: 18rem;">
+              <img src="images/cloud google.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: none;"><b>Cloud Computing</b></h5>
+                <p class="card-text" style="text-decoration: none;">Descubre el mundo del Cloud Computing de la mano de EOI (Escuela de Organización Industrial).</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#" style="color:black; text-decoration: none;"><div class="card google__zoom mx-auto mt-2" style="width: 18rem;">
+              <img src="images/marketing google.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: none;"><b>Fundamentos de Marketing Digital</b></h5>
+                <p class="card-text" style="text-decoration: none;">Aprende los conceptos básicos del marketing digital e impulsa tu negocio o tu carrera.</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#" style="color:black; text-decoration: none;"><div class="card google__zoom mx-auto mt-2" style="width: 18rem;">
+              <img src="images/comercio google.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: none;"><b>Comercio electrónico</b></h5>
+                <p class="card-text" style="text-decoration: none;">Descubre el mundo del E-Commerce de la mano de EOI (Escuela de Organización Industrial).</p>
+              </div>
+            </div></a>
+          </div>
+        </div>
+      </div>
+      <!-- Coursera -->
+      <div class="container coursera mb-5">
+        <div class="row mt-5 mb-3 texto">
+          <h2><b>Certificado de Coursera</b></h2>
+          <p>Adquiere habilidades con los cursos, certificados y títulos en línea que ofrecen las universidades y las empresas más importantes del mundo.</p>
+        </div>
+        <div class="row texto">
+          <div class="col-md-3">
+            <a href="https://www.coursera.org/specializations/diseno-videojuegos" style="color:black; text-decoration: none;"><div class="card coursera__zoom mx-auto mt-2" style="width: 18rem;">
+              <img src="images/videojuegos-coursera.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: none;"><b>Diseño y Creación de videojuegos</b></h5>
+                <p class="card-text" style="text-decoration: none;">El Programa Especializado  pretende ser un punto de entrada al mundo del diseño y la creación del videojuego, considerando de forma específica e individualizada los diferentes aspectos que valora la industria: diseño (con particular interés de la parte artística), motor y game play.</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://www.coursera.org/learn/gcp-big-data-ml-fundamentals-es" style="color:black; text-decoration: none;"><div class="card coursera__zoom mx-auto mt-2" style="width: 18rem;">
+              <img src="images/bidata-coursera.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: none;"><b>Google Cloud Platform Big Data and Machine Learning</b></h5>
+                <p class="card-text" style="text-decoration: none;">En este curso a pedido y acelerado de 1 semana, los participantes descubrirán las capacidades de los macrodatos y del aprendizaje automático de Google Cloud Platform (GCP). Además, se proporciona una descripción general rápida de Google Cloud Platform y más detalles sobre las capacidades de procesamiento de datos.</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://www.coursera.org/learn/negociacion" style="color:black; text-decoration: none;"><div class="card coursera__zoom mx-auto mt-2" style="width: 18rem;">
+              <img src="images/negociacion-coursera.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: none;"><b>Negociación exitosa: Estrategias y habilidades esenciales</b></h5>
+                <p class="card-text" style="text-decoration: none;">Todos negociamos diariamente. A nivel personal, negociamos con amigos, familia, propietarios, vendedores de autos y empleadores, entre otros. La negociación también es la clave del éxito comercial. Ninguna empresa puede sobrevivir sin contratos rentables. Dentro de una empresa, las habilidades de negociación lo pueden llevar a avanzar en su carrera. </p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-md-3">
+            <a href="https://www.coursera.org/learn/aprendiendo-a-aprender" style="color:black; text-decoration: none;"><div class="card coursera__zoom mx-auto mt-2" style="width: 18rem;">
+              <img src="images/aprender-coursera.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: none;"><b>Aprendiendo a aprender: Poderosas herramientas mentales</b></h5>
+                <p class="card-text" style="text-decoration: none;">Este curso te brinda acceso a invaluables técnicas de aprendizaje utilizadas por expertos en arte, música, literatura, matemáticas, ciencia, deportes y muchas otras disciplinas.</p>
+              </div>
+            </div></a>
+          </div>
+        </div>
+      </div>
+      <!-- Estadisticas -->
+      <div class="container counter mt-auto mt-md-5 rounded mb-5">
+        <div class="row">
+          <div class="col-md-12 counter__title" style="padding-top: 20px;">
+            <h2 class="texto text-center" style="color: #FFFFFF;"><b>Estadisticas</b></h2>
+          </div>
+        </div>
+        <div class="row texto counter">
+          <div class="col-md-3">
             <div class="d-flex justify-content-around">
-              <div style="position: relative;">
+              <div class="counter__image">
                 <img src="images/Polygon BG.png">
-                <div style="position: absolute;" class="textoHexa1">
+                <div style="position: absolute;" class="counter__textoHexa1">
                   <div class="row">
-                    <h2 style="font-weight: 800; line-height: 64px; font-size: 48px;" class="text-center">150+</h2>
+                    <h2 class="text-center counter__text">500+</h2>
                   </div>
                   <div class="row">
                     <p class="text-center">Cursos gratuitos</p>
@@ -101,9 +209,9 @@
             <div class="d-flex justify-content-around">
               <div style="position: relative;">
                 <img src="images/Polygon BG.png" alt="" style="position: relative;">
-                <div style="position: absolute;" class="textoHexa2">
+                <div style="position: absolute;" class="counter__textoHexa2">
                   <div class="row">
-                    <h2 style="font-weight: 800; line-height: 64px; font-size: 48px;" class="text-center">950K</h2>
+                    <h2 class="text-center counter__text">950K</h2>
                   </div>
                   <div class="row">
                     <p class="text-center">Horas reproducidas</p>
@@ -116,9 +224,9 @@
             <div class="d-flex justify-content-around">
               <div style="position: relative;">
                 <img src="images/Polygon BG.png" alt="" style="position: relative;">
-                <div style="position: absolute;" class="textoHexa3">
+                <div style="position: absolute;" class="counter__textoHexa3">
                   <div class="row">
-                    <h2 style="font-weight: 800; line-height: 64px; font-size: 48px;" class="text-center">50+</h2>
+                    <h2 class="text-center counter__text">50+</h2>
                   </div>
                   <div class="row">
                     <p class="text-center">Profesores capacitados</p>
@@ -131,9 +239,9 @@
             <div class="d-flex justify-content-around">
               <div style="position: relative;">
                 <img src="images/Polygon BG.png" alt="" style="position: relative;">
-                <div style="position: absolute;" class="textoHexa4">
+                <div style="position: absolute;" class="counter__textoHexa4">
                   <div class="row">
-                    <h2 style="font-weight: 800; line-height: 64px; font-size: 48px;" class="text-center">15K</h2>
+                    <h2 class="text-center counter__text">15K</h2>
                   </div>
                   <div class="row">
                     <p class="text-center">Estudiantes activos</p>
@@ -144,7 +252,107 @@
           </div>
         </div>
       </div>
+      <div class="container webinars">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="webinars__texto">
+              <b>Webinars Gratuitos</b>
+            </h2>
+            <p class="webinars__texto">
+              Todos los webinars online, seminarios y masterclasses disponibles en internet!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mx-auto mt-3" style="width: 18rem;">
+              <img src="images/webinar_presupuesto.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b>¿Cómo PRESUPUESTAR y PLANIFICAR mis Ganancias?</b></h5>
+                <p class="card-text">Hoy Mónica Dumas te cuenta paso a paso cómo armar un presupuesto económico para tu emprendimiento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mx-auto mt-3" style="width: 18rem;">
+              <img src="images/webinar_clientes.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b>Cómo Entender a tus clientes a Través de analitica!</b></h5>
+                <p class="card-text">En este webinar lograrás entender la historia detrás de tus números y saber cómo te están viendo tus clientes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mx-auto mt-3" style="width: 18rem;">
+              <img src="images/webinar_research.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b>Webinar UX Research (Español): Cómo Investigar para tu Proyecto</b></h5>
+                <p class="card-text">Este Webinar de UX Research estuvo a cargo de Juan Manuel Jacinto, fundador de Brailling.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mx-auto mt-3" style="width: 18rem;">
+              <img src="images/webinar_storytelling.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b>Storytelling: ¿Cómo Convertir tu CONTENIDO en una HISTORIA?</b></h5>
+                <p class="card-text">¿Sabés qué es el Storytelling en Marketing? Contar la historia de tu marca es crucial a la hora de captar seguidores y también clientes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mx-auto mt-3" style="width: 18rem;">
+              <img src="images/webinar_web.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b>Webinar Como Hacer una PAGINA WEB | Webinar Desarrolo Web</b></h5>
+                <p class="card-text">Quieres aprender a desarrollar una página web? Este Webinar a cargo de Santiago Acosta Verrier te va a encantar!.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mx-auto mt-3" style="width: 18rem;">
+              <img src="images/webinar_adword.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b>Google Adwords: Conceptos Básicos y Cómo Crear Campañas | Webinar</b></h5>
+                <p class="card-text">Aprende a crear campañas en Google Adwords (Google Ads) en este Webinar gratuito de Coderhouse!.</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
     </main>
+    <footer class="footer">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4 mt-5 mb-5 text-start">
+            <a href="#" class="footer__link"><p>Trabaja con nosotros</p></a>
+            <a href="#" class="footer__link"><p>Blog</p></a>
+            <a href="#" class="footer__link"><p>Ayuda y asistencia</p></a>
+            <a href="#" class="footer__link"><p>Gana dinero</p></a>
+          </div>
+          <div class="col-md-4 mt-5 mb-5 text-start">
+            <a href="#" class="footer__link"><p>Programacion</p></a>
+            <a href="diseño.html" class="footer__link"><p>Diseño</p></a>
+            <a href="marketing.html" class="footer__link"><p>Marketing</p></a>
+            <a href="desarrollo-personal.html" class="footer__link"><p>Desarrollo Personal</p></a>
+          </div>
+          <div class="col-md-4 mt-5 mb-5 text-end">
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Español
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Ingles</a></li>
+                <li><a class="dropdown-item" href="#">Portugues</a></li>
+                <li><a class="dropdown-item" href="#">Frances</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
 			  src="https://code.jquery.com/jquery-3.6.0.min.js"
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

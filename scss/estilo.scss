@@ -1,0 +1,165 @@
+body {
+    overflow-x: hidden;
+}
+  
+.texto {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Fuente */
+@mixin fuentes($color){
+    font-family: 'Manrope', sans-serif;
+    color: $color;
+}
+
+/* Header */
+.header {
+    /* Gradients / Kimoby Is The New Blue */
+    background: linear-gradient(180deg, #396AFC 0%, #2948FF 100%);
+    /* Shadow */
+    box-shadow: 14px 17px 17px rgba(7, 7, 7, 0.14);
+    &__navbar {
+        border-bottom: #FFFFFF 1px solid
+    }
+
+    &__main {
+        height: 100vh;
+        position: relative;
+        color: whitesmoke;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/* Contador */
+.counter {
+    background-color: #2949FE;
+
+    @media only screen and (min-width: 768px) {
+        .counter {
+        /* Blue 1 */
+        background: linear-gradient(to bottom, #2949FE 0%, #2F80ED 50%, white 50%, white 100% );
+        }
+      }
+
+    &__image {
+        position: relative;
+    }
+
+    &__text {
+        font-weight: 800;
+        line-height: 64px;
+        font-size: 48px;
+    }
+
+    &__textoHexa1 {
+        top: 50%; transform: translateY(-50%); left: 28%;
+    }
+      
+    &__textoHexa2 {
+        top: 50%; transform: translateY(-50%); left: 23%;
+    }
+      
+    &__textoHexa3 {
+        top: 50%; transform: translateY(-50%); left: 18%;
+    }
+      
+    &__textoHexa4 {
+        top: 50%; transform: translateY(-50%); left: 24%;
+    }
+  }
+
+/* Cursos */
+.cursos {
+    margin: auto;
+
+    &__image {
+        border: rgb(255, 255, 255) 1px solid;
+    }
+
+    &__container {
+        color: black;
+        margin: auto;
+    }
+
+    &__zoom {
+        transition: transform .2s; /* Animation */
+    }
+
+    &__zoom:hover {
+        transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        -webkit-box-shadow: 10px 10px 8px -4px rgba(54,54,54,0.86);
+        -moz-box-shadow: 10px 10px 8px -4px rgba(54,54,54,0.86);
+        box-shadow: 10px 10px 8px -4px rgba(54,54,54,0.86);
+    }
+}
+
+/* Lista Google */
+.google {
+    &__zoom {
+        transition: transform .2s;
+    }
+
+    &__zoom:hover {
+        transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        box-shadow: 0 3px 3+3px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+}
+
+/* Lista Coursera */
+.coursera {
+    &__zoom {
+        transition: transform .2s;
+    }
+
+    &__zoom:hover {
+        transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+}
+
+/* Curso Lista */
+.curso {
+    &__deco {
+        text-decoration: none;
+    }
+
+    &__titulo {
+        @include fuentes(black);
+    }
+
+    &__desc {
+        @include fuentes(black);
+    }
+
+    &__zoom {
+        transition: transform .2s;
+    }
+
+    &__zoom:hover {
+        transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+}
+
+/* Webinars */ 
+.webinars {
+    &__texto {
+        @include fuentes(black);
+    }
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(180deg, #396AFC 0%, #2948FF 100%);
+    color: #ffffff;
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+}
