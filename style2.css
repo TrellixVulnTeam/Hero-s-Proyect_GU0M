@@ -23,13 +23,26 @@ body {
     position: absolute;
     bottom: 0; }
 
+.macbook {
+  height: 500px;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .macbook__imagen {
+    -webkit-flex: auto;
+    flex: auto; }
+  .macbook__texto {
+    -webkit-flex: auto;
+    flex: auto; }
+
 /* Contador */
 .counter {
   background-color: #2949FE; }
-  @media only screen and (min-width: 768px) {
-    .counter .counter {
-      /* Blue 1 */
-      background: linear-gradient(to bottom, #2949FE 0%, #2F80ED 50%, white 50%, white 100%); } }
   .counter__image {
     position: relative; }
   .counter__text {
@@ -90,24 +103,30 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 /* Curso Lista */
-.curso__deco {
-  text-decoration: none; }
-
-.curso__titulo {
-  font-family: 'Manrope', sans-serif;
-  color: black; }
-
-.curso__desc {
-  font-family: 'Manrope', sans-serif;
-  color: black; }
-
-.curso__zoom {
-  transition: transform .2s; }
-
-.curso__zoom:hover {
-  transform: scale(1.02);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+.curso {
+  display: grid;
+  grid-template-areas: "imagen" "info";
+  grid-template-rows: 100% 100%;
+  grid-template-columns: auto; }
+  .curso__image {
+    grid-area: imagen; }
+  .curso__text {
+    grid-area: info;
+    padding: 10px; }
+  .curso__deco {
+    text-decoration: none; }
+  .curso__titulo {
+    font-family: 'Manrope', sans-serif;
+    color: black; }
+  .curso__desc {
+    font-family: 'Manrope', sans-serif;
+    color: black; }
+  .curso__zoom {
+    transition: transform .2s; }
+  .curso__zoom:hover {
+    transform: scale(1.02);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 /* Webinars */
 .webinars__texto {
@@ -121,3 +140,56 @@ body {
   .footer__link {
     text-decoration: none;
     color: white; }
+
+.grid {
+  display: grid;
+  grid-template-areas: "filtro" "cursos";
+  grid-template-rows: 100% 100%;
+  grid-template-columns: auto; }
+  .grid__filtro {
+    grid-area: filtro; }
+  .grid__cursos {
+    grid-area: cursos;
+    margin-top: 20px; }
+
+@media only screen and (min-width: 768px) {
+  .counter {
+    /* Blue 1 */
+    background: linear-gradient(to bottom, #2949FE 0%, #2F80ED 50%, white 50%, white 100%); }
+  .macbook {
+    height: 500px;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .macbook__imagen {
+      width: 50%;
+      -webkit-flex: auto;
+      flex: auto; }
+    .macbook__texto {
+      width: 50%;
+      -webkit-flex: auto;
+      flex: auto; }
+  .grid {
+    display: grid;
+    grid-template-areas: "filtro cursos" "filtro cursos" "filtro cursos" "filtro cursos";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100% 100% 100% 100%; }
+    .grid__filtro {
+      grid-area: filtro; }
+    .grid__cursos {
+      grid-area: cursos; }
+  .curso {
+    display: grid;
+    grid-template-areas: "imagen info";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto; }
+    .curso__image {
+      grid-area: imagen; }
+    .curso__card {
+      grid-area: info;
+      padding: 10px; } }

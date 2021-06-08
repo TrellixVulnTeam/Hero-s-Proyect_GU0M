@@ -36,17 +36,30 @@ body {
     }
 }
 
+.macbook {
+    height: 500px;
+    width: 100%;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &__imagen {
+        -webkit-flex: auto;
+	    flex: auto;
+    }
+
+    &__texto {
+        -webkit-flex: auto;
+	    flex: auto;
+    }
+}
+
 /* Contador */
 .counter {
     background-color: #2949FE;
-
-    @media only screen and (min-width: 768px) {
-        .counter {
-        /* Blue 1 */
-        background: linear-gradient(to bottom, #2949FE 0%, #2F80ED 50%, white 50%, white 100% );
-        }
-      }
-
     &__image {
         position: relative;
     }
@@ -115,6 +128,7 @@ body {
 .coursera {
     &__zoom {
         transition: transform .2s;
+
     }
 
     &__zoom:hover {
@@ -125,6 +139,21 @@ body {
 
 /* Curso Lista */
 .curso {
+    display: grid;
+    grid-template-areas:
+    "imagen" "info";
+    grid-template-rows: 100% 100%;
+    grid-template-columns: auto;
+
+    &__image {
+        grid-area: imagen;
+    }
+
+    &__text {
+        grid-area: info;
+        padding: 10px;
+    }
+
     &__deco {
         text-decoration: none;
     }
@@ -161,5 +190,89 @@ body {
     &__link {
         text-decoration: none;
         color: white;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "filtro"
+    "cursos";
+    grid-template-rows: 100% 100%;
+    grid-template-columns: auto;
+
+    &__filtro {
+        grid-area: filtro;
+    }
+
+    &__cursos {
+        grid-area: cursos;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .counter {
+    /* Blue 1 */
+    background: linear-gradient(to bottom, #2949FE 0%, #2F80ED 50%, white 50%, white 100% );
+    }
+
+    .macbook {
+        height: 500px;
+        width: 100%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        &__imagen {
+            width: 50%;
+            -webkit-flex: auto;
+            flex: auto;
+        }
+    
+        &__texto {
+            width: 50%;
+            -webkit-flex: auto;
+            flex: auto;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        "filtro cursos"
+        "filtro cursos"
+        "filtro cursos"
+        "filtro cursos";
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 100% 100% 100% 100%;
+    
+        &__filtro {
+            grid-area: filtro;
+        }
+    
+        &__cursos {
+            grid-area: cursos;
+        }
+    }
+
+    .curso {
+        display: grid;
+        grid-template-areas:
+        "imagen info";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto;
+    
+        &__image {
+            grid-area: imagen;
+        }
+    
+        &__card {
+            grid-area: info;
+            padding: 10px;
+        }
     }
 }
